@@ -27,6 +27,8 @@
         	background-color: #003366;
         	padding: 15px;
         	text-align: center;
+        	position: sticky;
+        	top: 0;
     	}
     	nav a {
         	color: white;
@@ -64,6 +66,9 @@
         	color: white;
         	padding: 15px;
         	margin-top: 30px;
+    	}
+    	html {
+        	scroll-behavior: smooth;
     	}
 	</style>
 </head>
@@ -130,8 +135,7 @@
     	<section id="ai-history">
         	<h2>AI History</h2>
         	<h3>
-            	Explain key moments in the historical development of AI and ML
-            	and relate them to modern AI systems.
+            	Explain key moments in the historical development of AI and ML and relate them to modern AI systems.
         	</h3>
         	<p>
             	The foundational era of Artificial Intelligence began in the
@@ -144,28 +148,38 @@
             	heavily on human programmers to explicitly define every rule.
             	Today, this deterministic logic survives as the structural
             	backbone of modern AI, manifesting in everyday technology like
-            	Google Maps routing algorithms and decision-making systems used
-            	in banking and compliance software.
+            	the strict, rule-governed routing algorithms of Google Maps or
+            	the rigid decision trees used in automated banking compliance
+            	and credit-scoring software.
         	</p>
         	<p>
             	The paradigm shifted dramatically with the rise of Machine
             	Learning (ML) and the Deep Learning Revolution of the 2010s,
             	which moved away from rigid rules toward pattern recognition.
-            	A pivotal catalyst was the 2012 ImageNet competition, where
-            	AlexNet demonstrated the power of deep neural networks.
-            	This breakthrough directly powers modern computer vision
-            	applications such as Apple Face ID, Tesla vehicle perception
-            	systems, and Netflix recommendation engines.
+            	A pivotal catalyst was the 2012 ImageNet competition, where the
+            	convolutional neural network AlexNet proved that deep neural
+            	networks could recognize objects with unprecedented accuracy.
+            	Rather than being told what a cat looks like, the system learned
+            	by digesting millions of images. This historical leap directly
+            	powers modern computer vision and predictive ML systems.
+            	Everyday examples include Apple’s Face ID unlocking smartphones,
+            	autonomous Tesla vehicles detecting pedestrians, and Netflix’s
+            	recommendation engines predicting viewing preferences based on
+            	historical data.
         	</p>
         	<p>
             	The modern era of AI is defined by generative AI and Large
             	Language Models (LLMs), sparked by the 2017 introduction of the
-            	Transformer architecture. Transformers introduced the concept
-            	of self-attention, enabling systems to process language more
-            	effectively and understand context. This innovation powers tools
-            	such as ChatGPT and Google Gemini, allowing AI systems to
-            	generate text, assist with coding, and support creative and
-            	analytical tasks.
+            	Transformer architecture by Google researchers. Transformers
+            	introduced the self-attention mechanism, allowing algorithms to
+            	process entire sequences of data simultaneously and understand
+            	the deep context of language. This breakthrough bridged the gap
+            	between historic, narrow AI and versatile, conversational
+            	systems. This technology directly underpins modern generative
+            	tools like OpenAI's ChatGPT and Google Gemini, which generate
+            	human-like text, write software code, and synthesize massive
+            	datasets instantly, transforming AI from a passive analytical
+            	tool into an active creative collaborator.
         	</p>
     	</section>
     	<section id="ai-ethics">
@@ -176,17 +190,17 @@
         	<p>
             	Algorithmic bias and discrimination represent one of the most
             	pressing ethical challenges in artificial intelligence and
-            	machine learning, as these systems inherently reflect and amplify
-            	the prejudices present in their training data. When historical
-            	data containing human biases is fed into predictive models, the
-            	AI perpetuates those inequalities under the guise of objective,
-            	mathematical neutrality. A stark societal implication of this is
-            	the entrenchment of systemic racism and sexism in critical life
-            	areas. For example, predictive policing algorithms have been
-            	shown to disproportionately target minority neighborhoods, while
-            	automated hiring tools have actively deprioritized female
-            	applicants by analyzing resumes based on historical corporate
-            	demographics that favored men.
+            	machine learning, as these systems inherently reflect and
+            	amplify the prejudices present in their training data. When
+            	historical data containing human biases is fed into predictive
+            	models, the AI perpetuates those inequalities under the guise of
+            	objective, mathematical neutrality. A stark societal implication
+            	of this is the entrenchment of systemic racism and sexism in
+            	critical life areas. For example, predictive policing
+            	algorithms have been shown to disproportionately target minority
+            	neighborhoods, while automated hiring tools have actively
+            	deprioritized female applicants by analyzing resumes based on
+            	historical corporate demographics that favored men.
         	</p>
         	<p>
             	The erosion of privacy and data autonomy constitutes another
@@ -224,7 +238,52 @@
     	</section>
     	<section id="ai-search-reasoning">
         	<h2>AI Search and Reasoning</h2>
-        	<p>Add your AI Search and Reasoning content here.</p>
+        	<h3>
+            	Describe how core AI techniques such as search and adversarial reasoning are used to model intelligent behavior.
+        	</h3>
+        	<p>
+            	Core AI techniques such as search algorithms and adversarial
+            	reasoning are fundamental to modeling intelligent behavior,
+            	enabling machines to solve problems and make decisions by
+            	systematically exploring potential actions. Search algorithms
+            	allow an agent to navigate through a vast state space of
+            	possibilities to find an optimal path toward a specific goal.
+            	By evaluating current states, predicting future outcomes, and
+            	evaluating the costs or rewards associated with different
+            	choices, an AI agent mimics human problem-solving and foresight.
+            	This structured exploration forms the foundation for logical
+            	planning, routing, and optimization tasks across a wide variety
+            	of autonomous systems.
+        	</p>
+        	<p>
+            	In non-competitive environments, classical search techniques
+            	excel at determining the most efficient sequence of actions to
+            	achieve a clear objective. For example, in GPS navigation
+            	systems, algorithms like A* search calculate the fastest route
+            	from a starting point to a destination by factoring in
+            	distance, traffic, and road conditions. Similarly, in robotics,
+            	search-based path planning allows an autonomous drone or robotic
+            	vacuum to navigate complex, obstacle-filled rooms without
+            	colliding into walls. These examples demonstrate how search
+            	techniques model basic goal-directed intelligence, transforming
+            	abstract objectives into actionable, step-by-step strategies.
+        	</p>
+        	<p>
+            	When the environment includes other proactive agents,
+            	adversarial reasoning is introduced to model intelligence in
+            	competitive, multi-agent scenarios. This technique requires an
+            	AI to anticipate the counter-moves of a rational opponent who
+            	is actively trying to minimize the AI's success. Algorithms
+            	like Minimax, combined with Alpha-Beta pruning, allow an agent
+            	to look several steps ahead, evaluating the best possible move
+            	under the assumption that the adversary will also make their
+            	best possible move. Classic examples include chess-playing
+            	engines like Deep Blue or Google's AlphaGo, which use
+            	adversarial lookahead and neural networks to outmaneuver human
+            	grandmasters. By predicting opponent behaviors and planning
+            	safeguards against them, adversarial reasoning successfully
+            	models high-level strategic intelligence and adaptability.
+        	</p>
     	</section>
     	<section id="ml-fundamentals">
         	<h2>ML Fundamentals</h2>
